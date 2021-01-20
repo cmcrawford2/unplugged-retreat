@@ -96,11 +96,17 @@ header, footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 88.8888%;
+  margin: 0;
 }
 
 header nav {
@@ -108,11 +114,13 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 60%;
 }
 
 /* Main area stuff */
@@ -165,6 +173,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -177,6 +189,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.reviews h3 {
+  width: 88.8888%;
 }
 
 /* About Page */
@@ -234,6 +250,7 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55%;
 }
 
 footer .footer-content {
