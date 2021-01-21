@@ -87,7 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Header stuff */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* Header & Footer styles */
 
 header, footer {
   display: flex;
@@ -105,7 +110,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 88.8888%;
   margin: 0;
 }
 
@@ -123,19 +127,46 @@ header nav ul {
   width: 60%;
 }
 
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+/* from solution */
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 /* Main area stuff */
 
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center; /* solution doesn't have this. */
+  /* align-items: center; /* solution doesn't have this. */
   flex-flow: row wrap;
-}
-
-.form-description { /* solution doesn't have this. */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 aside {
@@ -145,25 +176,12 @@ aside {
   flex-flow: row wrap;
 }
 
-.form { /* solution doesn't have this. */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; /* Not in solution */
-}
-
-.features .content-wrapper { /* Not in solution */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .features .features-items {
@@ -184,13 +202,6 @@ aside {
   flex-flow: row wrap;
 }
 
-.reviews .content-wrapper { /* not in solution */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .reviews h3 {
   width: 88.8888%;
 }
@@ -204,23 +215,11 @@ aside {
   flex-flow: row wrap;
 }
 
-.mission .content-wrapper { /* Not in solution */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.contact-section .content-wrapper { /* Not in solution */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* faq page */
@@ -244,47 +243,6 @@ aside {
   justify-content: center;
   align-items: center;
 }
-/* Footer stuff */
-
-footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 55%;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* from solution */
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
