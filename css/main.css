@@ -201,9 +201,14 @@ aside {
   align-items: center; /* not in solution */
   flex-flow: row wrap;
 }
-
+/*
 .reviews h3 {
   width: 88.8888%;
+}
+*/
+
+.reviews article {
+  width: 40%;
 }
 
 /* About Page */
@@ -426,6 +431,83 @@ aside {
     
 @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
+   .content-wrapper {
+    max-width: 960px;
+ }
+ /* Header */
+ header {
+  justify-content: space-around;
+}
+header .content-wrapper {
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+header nav ul {
+  justify-content: space-between;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+ /* form section in two columns. */
+ aside .content-wrapper {
+   margin: 50px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-flow: row wrap;
+ }
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form {
+   width: 40%;
+   margin: 0;
+ }
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 33.3333%;
+}
+.features-item-description {
+  width: 50%;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
 }
 
 @media only screen and (min-width: 35em) {
