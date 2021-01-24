@@ -282,6 +282,15 @@ aside .content-wrapper {
   margin: 15px 0 25px 0;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 10px;
+}
+
+.features article p i {
+  width: 100%;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -546,6 +555,11 @@ input[type=button] {
     flex-flow: row wrap;
     flex-basis: 50%;
   }
+
+  .features-items {
+    align-items: flex-start;
+  }
+
   .features-item-description {
     width: 50%;
   }
@@ -637,9 +651,14 @@ justify-content: space-between;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   flex-basis: 33.3333%;
 }
+
+.features-items {
+  align-items: flex-start;
+}
+
 .features-item-description {
   width: 50%;
 }
