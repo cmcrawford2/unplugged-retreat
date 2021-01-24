@@ -207,10 +207,6 @@ footer {
   flex-direction: column;
 }
 
-/*footer p {
-  margin: 0;
-}*/
-
 footer .content-wrapper {
   width: 55%;
   margin: 25px 0;
@@ -233,15 +229,6 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
-
-/*
-footer .social-icons i {
-  font-size: 1.125em;
-  background: #527158;
-}*/
-
-
-
 
 /* Main area stuff */
 
@@ -308,6 +295,7 @@ aside .content-wrapper {
 .reviews .content-wrapper {
   margin: 15px 0 25px 0;
 }
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -670,21 +658,28 @@ input[type=button] {
 
   .reviews {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     background: #2a423a;
   }
 
+  .reviews .content-wrapper {
+    max-width: 960px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
   .reviews figure {
-    width: 48%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
-
+  
   .reviews article {
-    width: 48%;
+    width: 35%;
   }
 
   .mission-content {
