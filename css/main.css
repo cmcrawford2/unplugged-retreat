@@ -95,7 +95,6 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  background: #202322;
   color: #e2e3ed;
 }
  
@@ -103,10 +102,12 @@ ul,
 ol {
   font-size: 1.125em;
   list-style-type: none;
-  padding: 0
+  margin: 0;
+  padding: 0;
 }
 
 ul, li {
+  font-weight: bold;
   text-transform: uppercase;
 }
  
@@ -119,6 +120,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: normal;
+  margin: 0;
 }
  
 h3, 
@@ -126,6 +128,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: normal;
+  margin: 0;
 }
  
 p {
@@ -156,6 +159,7 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header {
@@ -190,7 +194,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 50%;
+  width: 60%;
 }
 
 header nav ul {
@@ -199,17 +203,13 @@ header nav ul {
   width: 100%;
 }
 
-header nav ul li {
-  font-weight: bold;
-}
-
 footer {
   flex-direction: column;
 }
 
 footer .content-wrapper {
   width: 55%;
-  margin: 25px 0;
+  margin: 50px 0;
   text-align: center;
 }
 
@@ -260,24 +260,53 @@ aside {
 }
 
 aside .content-wrapper {
-  margin: 10px 0 50px 0;
+  margin: 30px 0 50px 0;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
   background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap; /* Not in solution */
+  flex-flow: row wrap;
 }
 
-.features .content-wrapper {
-  margin: 15px 0 25px 0;
+.features h2 {
+  margin-bottom: 40px;
 }
 
 .features i {
 	font-size: 3.75em;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 .features .features-items {
@@ -292,24 +321,22 @@ aside .content-wrapper {
   text-align: center;
 }
 
-.reviews .content-wrapper {
-  margin: 15px 0 25px 0;
-}
-
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center; /* not in solution */
   flex-flow: row wrap;
   background: #2a423a;
 }
 
-.reviews figure {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.reviews h2 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.reviews h3 {
+  margin-top: 20px;
 }
 
 /* About Page */
@@ -320,10 +347,6 @@ aside .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   background: #527158;
-}
-
-.mission .content-wrapper {
-  margin: 25px 0;
 }
 
 .map figure {
@@ -350,6 +373,10 @@ aside .content-wrapper {
   background: #2a423a;
 }
 
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
 /* faq page */
 
 .faq {
@@ -365,39 +392,13 @@ aside .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 25px 0;
+  margin: 50px 0;
 }
 
-.faq .faq-items { /* Not in solution */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+.faq h4 {
   font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
+  line-height: 1.5em;
+  margin-top: 30px;
 }
 
 /* ==========================================================================
@@ -542,7 +543,7 @@ input[type=button] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%;
   }
 
@@ -552,6 +553,26 @@ input[type=button] {
 
   .features-item-description {
     width: 50%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    margin: 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .mission-content {
@@ -573,7 +594,7 @@ input[type=button] {
   .contact-content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
   }
 
   .faq .content-wrapper {
@@ -654,32 +675,6 @@ input[type=button] {
 
   .features-item-description {
     width: 50%;
-  }
-
-  .reviews {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    background: #2a423a;
-  }
-
-  .reviews .content-wrapper {
-    max-width: 960px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row wrap;
-  }
-
-  .reviews figure {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  .reviews article {
-    width: 35%;
   }
 
   .mission-content {
